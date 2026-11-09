@@ -13,3 +13,19 @@ function processInput(input: string | number | boolean): string | number {
 
   return input ? "Active" : "InActive";
 }
+
+function formatCoordinate(
+  coordinate: readonly [number, number, string],
+): string {
+  const [latitude, longitude, locationName] = coordinate;
+  return `Location: ${locationName} (${latitude},${longitude})`;
+}
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  const merged: T[] = [];
+  for (const array of arrays) {
+    merged.push(...array);
+  }
+
+  return merged;
+}
