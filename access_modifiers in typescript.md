@@ -1,4 +1,4 @@
-# Access Modifiers in TypeScript
+** Access Modifiers in TypeScript**
 When We build classes, we may need to control who see or change data inside them
 for Security reason. And this behavior is called encapsulation. Typescript provides access modifiers to help us do this: public, private, protected and readonly.
 
